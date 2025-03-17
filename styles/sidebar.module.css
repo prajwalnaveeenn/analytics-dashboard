@@ -1,0 +1,80 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.navLink {
+    color: white; /* Light text */
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    text-align: left; /* Align text left */
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navLink:hover {
+    background-color: #414e69; /* Dark hover */
+    color: white;
+}
+  
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100px;
+    background-color: #6c768b51;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Open Sidebar Button */
+.openButton {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #888a8d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    z-index: 1100;
+}
+
+.openButton:hover {
+    background: #8296c2;
+}
+
+/* Close Button */
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: rgba(255, 255, 255, 0.753);
+    border: 1px solid rgb(238, 230, 230);
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 30%;
+    transition: background 0.3s ease-in-out;
+}
+
+.closeButton:hover {
+    background: white;
+    color: #1c1f26;
+}
