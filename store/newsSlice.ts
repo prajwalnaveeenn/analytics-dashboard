@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const NEWS_API_URL = "https://newsapi.org/v2/top-headlines";
-const NEWS_API_KEY = "cdf5827d7d20418987bbd00222f6069d"; // Replace with your API key
+const NEWS_API_KEY = process.env.NEXT_PUBLIC_NEWS_API_KEY; // Replace with your API key
 
 interface NewsArticle {
   title: string;

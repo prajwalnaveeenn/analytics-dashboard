@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "4AWXAEG9LYY20ZQY";
+const STOCK_API_KEY = process.env.NEXT_PUBLIC_STOCK_API_KEY;
 const BASE_URL = "https://www.alphavantage.co/query";
 
 export const fetchStockData = async (symbol: string) => {
@@ -9,7 +9,7 @@ export const fetchStockData = async (symbol: string) => {
       params: {
         function: "TIME_SERIES_DAILY",
         symbol,
-        apikey: API_KEY,
+        apikey: STOCK_API_KEY,
       },
     });
 

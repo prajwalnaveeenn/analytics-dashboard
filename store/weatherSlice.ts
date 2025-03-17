@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 
 import axios from "axios";
 
-const API_KEY = "9eb974fc4a8be4f2d87a85b60150854c"; // Replace with actual API key
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY; // Replace with actual API key
 const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
   interface WeatherData {

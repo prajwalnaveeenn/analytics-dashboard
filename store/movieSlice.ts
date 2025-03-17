@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const TMDB_API_KEY = "63768d7625f8d9163d5afd25000612c5";
+const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY;
 const TMDB_API_URL = "https://api.themoviedb.org/3";
 
 export const fetchTrendingMovies = createAsyncThunk(

@@ -17,7 +17,7 @@ const defaultForecast = [
   { day: "E", temp: 35 },
 ];
 
-const GEO_DB_API_KEY = "355517a5c7mshcca3da4a902ee71p19c3dfjsn7b1a6b019a40"; // Replace with your API key
+const GEO_DB_API_KEY = process.env.NEXT_PUBLIC_GEO_DB_API_KEY; // Replace with your API key
 const GEO_DB_API_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo/cities";
 
 const Weather = () => {
